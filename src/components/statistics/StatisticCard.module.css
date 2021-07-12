@@ -1,0 +1,19 @@
+.item {
+  background-color: thistle;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.item:last-child {
+  margin-right: 0%;
+}
+.label {
+  color: brown;
+  margin-right: 10px;
+}
+.percentage {
+  line-height: 2em;
+  color: red;
+}

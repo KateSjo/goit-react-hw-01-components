@@ -1,0 +1,29 @@
+.item {
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+}
+.item:last-child {
+  margin-right: 0%;
+}
+.isOnline {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 15px;
+}
+.isOffline {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 15px;
+}
+.avatar {
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+}

@@ -1,0 +1,22 @@
+.stat__list {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
+  border-radius: 5px;
+  outline: 1px tomato solid;
+}
+.statistics {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title {
+  text-align: center;
+}
