@@ -1,9 +1,9 @@
 import React from 'react';
-import TransactionsData from '../../transactions.json';
+import PropTypes from 'prop-types';
 import TransactionsLine from './TransactionsLine';
 import styles from './TransactionsList.module.css';
 
-const TransactionsList = () => (
+const TransactionsList = ({ data }) => (
   <table className={styles.transaction__history}>
     <thead>
       <tr>
@@ -13,7 +13,7 @@ const TransactionsList = () => (
       </tr>
     </thead>
     <tbody>
-      {TransactionsData.map(TransactionData => (
+      {data.map(TransactionData => (
         <TransactionsLine
           id={TransactionData.id}
           type={TransactionData.type}
@@ -24,4 +24,7 @@ const TransactionsList = () => (
     </tbody>
   </table>
 );
+TransactionsList.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object),
+};
 export default TransactionsList;

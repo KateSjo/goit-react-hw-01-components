@@ -3,7 +3,7 @@ import img from './3135715.svg';
 import PropTypes from 'prop-types';
 import styles from './SocialProfile.module.css';
 
-const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
+const Profile = ({ avatar, name, tag, location, stats }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -16,15 +16,15 @@ const Profile = ({ avatar, name, tag, location, followers, views, likes }) => {
       <ul className={styles.stats}>
         <li>
           <span className={styles.lable}>Followers</span>
-          <span className={styles.quantity}>{followers}</span>
+          <span className={styles.quantity}>{stats.followers}</span>
         </li>
         <li>
           <span className={styles.lable}>Views</span>
-          <span className={styles.quantity}>{views}</span>
+          <span className={styles.quantity}>{stats.views}</span>
         </li>
         <li>
           <span className={styles.lable}>Likes</span>
-          <span className={styles.quantity}>{likes}</span>
+          <span className={styles.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -36,9 +36,7 @@ Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  stats: PropTypes.arrayOf(PropTypes.object),
 };
 
 Profile.defaultProps = {

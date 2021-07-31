@@ -12,7 +12,7 @@ const TransactionsLine = ({ id, type, amount, currency }) => {
 };
 
 TransactionsLine.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   type: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,
